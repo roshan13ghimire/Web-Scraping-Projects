@@ -5,8 +5,8 @@ import time
 import pandas as pd
 from selenium.webdriver.common.by import By
 
-jobName = input()
-placeName = input()
+jobName = input("Enter the Job Title: ")
+placeName = input("Enter the location: ")
 
 jobTitle = []
 companyName = []
