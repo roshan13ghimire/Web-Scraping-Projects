@@ -31,7 +31,7 @@ except:
     lastPageNumber = 0
 page = 0
 
-
+print("Please wait.....")
 while(page <= lastPageNumber):
     url = "https://ca.indeed.com/jobs?q=" + jobName + "&l=" + placeName + "&start=" + str(page)
     driver.get(url)
@@ -56,8 +56,6 @@ while(page <= lastPageNumber):
             jobLocation.append(_.getText())
         page += 10
         
-
-    
 
 df  = pd.DataFrame({'Job Title': jobTitle,
                   'Company Name': companyName,
